@@ -1,0 +1,184 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOnIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOffIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "WhatsPlayingIntent",
+          "samples": [
+            "what song am I listening to",
+            "what track is this",
+            "what\u0027s playing",
+            "what song is this",
+            "what is this song",
+            "what\u0027s this song",
+            "what am I listening to",
+            "what track is playing",
+            "tell me what\u0027s playing",
+            "what is playing"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "rating",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "RateSongIntent",
+          "samples": [
+            "rate this song {rating} stars",
+            "rate this song {rating}",
+            "rate this {rating} stars",
+            "give this song {rating} stars",
+            "rate the song {rating} stars",
+            "rate the current song {rating} stars",
+            "rate it {rating} stars",
+            "give it {rating} stars",
+            "I rate this {rating} stars",
+            "set rating to {rating} stars",
+            "set the rating to {rating}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PlayMusicIntent",
+          "samples": [
+            "play {query}",
+            "play me {query}",
+            "put on {query}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PlayPlaylistIntent",
+          "samples": [
+            "play playlist {query}",
+            "play the playlist {query}",
+            "play my {query} playlist",
+            "play the {query} playlist",
+            "start playlist {query}",
+            "playlist {query}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PlayArtistIntent",
+          "samples": [
+            "play music by {query}",
+            "play songs by {query}",
+            "play some songs by {query}",
+            "play music by the artist {query}",
+            "play artist {query}",
+            "play the artist {query}",
+            "play something by {query}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PlayAlbumIntent",
+          "samples": [
+            "play album {query}",
+            "play the album {query}",
+            "album {query}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PlayTrackIntent",
+          "samples": [
+            "play song {query}",
+            "play the song {query}",
+            "play track {query}",
+            "play the track {query}",
+            "song {query}",
+            "track {query}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ShuffleMusicIntent",
+          "samples": [
+            "shuffle {query}",
+            "shuffle some {query}"
+          ]
+        }
+      ],
+      "invocationName": "gaurav music"
+    }
+  }
+}
