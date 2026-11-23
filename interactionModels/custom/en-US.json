@@ -1,0 +1,263 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOnIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOffIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "WhatsPlayingIntent",
+          "samples": [
+            "what song am I listening to",
+            "what track is this",
+            "what\u0027s playing",
+            "what song is this",
+            "what is this song",
+            "what\u0027s this song",
+            "what am I listening to",
+            "what track is playing",
+            "tell me what\u0027s playing",
+            "what is playing"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "artist",
+              "type": "CUSTOM_ARTIST"
+            },
+            {
+              "name": "album",
+              "type": "CUSTOM_ALBUM"
+            },
+            {
+              "name": "track",
+              "type": "CUSTOM_TRACK"
+            },
+            {
+              "name": "playlist",
+              "type": "CUSTOM_PLAYLIST"
+            }
+          ],
+          "name": "PlayMusicIntent",
+          "samples": [
+            "play album {album}",
+            "play songs by {artist}",
+            "play the song {track}",
+            "play the song {track} by {artist}",
+            "play the album {album}",
+            "play the album {album} by {artist}",
+            "play music by the artist {artist}",
+            "play some songs by {artist}",
+            "play {artist}",
+            "play {album}",
+            "play {track}",
+            "play playlist {playlist}",
+            "play the playlist {playlist}",
+            "play my {playlist} playlist",
+            "shuffle {artist}",
+            "shuffle {album}",
+            "shuffle playlist {playlist}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "rating",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "RateSongIntent",
+          "samples": [
+            "rate this song {rating} stars",
+            "rate this song {rating}",
+            "rate this {rating} stars",
+            "give this song {rating} stars",
+            "rate the song {rating} stars",
+            "rate the current song {rating} stars",
+            "rate it {rating} stars",
+            "give it {rating} stars",
+            "I rate this {rating} stars",
+            "set rating to {rating} stars",
+            "set the rating to {rating}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "sugar free",
+                  "suga",
+                  "sooga free"
+                ],
+                "value": "Suga Free"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Beatles"
+                ],
+                "value": "The Beatles"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Zeppelin"
+                ],
+                "value": "Led Zeppelin"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Floyd"
+                ],
+                "value": "Pink Floyd"
+              }
+            },
+            {
+              "name": {
+                "value": "Queen"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Rolling Stones"
+                ],
+                "value": "The Rolling Stones"
+              }
+            }
+          ],
+          "name": "CUSTOM_ARTIST"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Abbey Road"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Dark Side"
+                ],
+                "value": "Dark Side of the Moon"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Led Zeppelin Four",
+                  "Zeppelin Four"
+                ],
+                "value": "Led Zeppelin IV"
+              }
+            },
+            {
+              "name": {
+                "value": "A Night at the Opera"
+              }
+            }
+          ],
+          "name": "CUSTOM_ALBUM"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Come Together"
+              }
+            },
+            {
+              "name": {
+                "value": "Stairway to Heaven"
+              }
+            },
+            {
+              "name": {
+                "value": "Bohemian Rhapsody"
+              }
+            },
+            {
+              "name": {
+                "value": "Money"
+              }
+            },
+            {
+              "name": {
+                "value": "Here Comes the Sun"
+              }
+            }
+          ],
+          "name": "CUSTOM_TRACK"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Favorites"
+              }
+            },
+            {
+              "name": {
+                "value": "Workout"
+              }
+            },
+            {
+              "name": {
+                "value": "Chill"
+              }
+            }
+          ],
+          "name": "CUSTOM_PLAYLIST"
+        }
+      ],
+      "invocationName": "gaurav music"
+    }
+  }
+}
